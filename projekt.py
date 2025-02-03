@@ -47,39 +47,4 @@ def jegyek():
             sor+=1
 print("Ebben a sorban van az igénynek megfelelő számú ülőhely:", jegyek())
 
-def bevetel():
-    felnottek = 0
-    diakokNyugdijasok = 0
-    gyerekek = 0
-    osszeg = 0
-    for i in ulesek:
-        for j in i:
-            if j == "F":
-                felnottek += 1
-            elif j == "D/Ny":
-                diakokNyugdijasok += 1
-            elif j == "Gy":
-                gyerekek += 1
-    osszeg = felnottek*2500 + diakokNyugdijasok*2100 + gyerekek*1300
-    print("Erre az előadásra a mozi bevétele:", osszeg, "Ft")
-bevetel()
-def felnottek():
-    teljesAru = 0
-    for i in ulesek:
-        for j in i:
-            if j == "F":
-                teljesAru += 1
-    print(teljesAru,"db teljes árú jegyet adtak el.")        
-felnottek()
-def kihasznaltsag():
-    foglalt = 0
-    ures = 0
-    kihasznalt = 0
-    for i in ulesek:
-        for j in i:
-            if j == "SZABAD":
-                ures += 1
-            foglalt = 300-ures
-    kihasznalt = round(foglalt/3,2)
-    print("A terem foglaltásga:", kihasznalt, "%") 
-kihasznaltsag()
+
