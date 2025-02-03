@@ -73,5 +73,17 @@ def felnottek():
     print(teljesAru,"db teljes árú jegyet adtak el.")        
 felnottek()
 
+def kihasznaltsag():
+    foglalt = 0
+    ures = 0
+    kihasznalt = 0
+    for i in ulesek:
+        for j in i:
+            if j == "SZABAD":
+                ures += 1
+            foglalt = 300-ures
+    kihasznalt = round(foglalt/3,2)
+    print("A terem foglaltásga:", kihasznalt, "%") 
+kihasznaltsag()
 
 
