@@ -64,5 +64,14 @@ def bevetel():
     print("Erre az előadásra a mozi bevétele:", osszeg, "Ft")
 bevetel()
 
+def felnottek():
+    teljesAru = 0
+    for i in ulesek:
+        for j in i:
+            if j == "F":
+                teljesAru += 1
+    print(teljesAru,"db teljes árú jegyet adtak el.")        
+felnottek()
+
 
 
